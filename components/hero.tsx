@@ -1,5 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Plane, SunMedium, MapPin } from "lucide-react";
+
+const whatsappNumber = "5521994179187";
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Gostaria de montar um roteiro personalizado.")}`;
+const whatsappUrlConsultor = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá! Gostaria de falar com um consultor.")}`;
 
 export function Hero() {
   return (
@@ -24,13 +30,23 @@ export function Hero() {
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
-            <Button size="lg" className="gap-2 rounded-full">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-brand px-8 text-sm font-medium text-white shadow transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+            >
               <Plane className="h-4 w-4" />
               Montar meu roteiro
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-full">
+            </a>
+            <a
+              href={whatsappUrlConsultor}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-11 items-center justify-center rounded-full border border-slate-300 bg-white px-8 text-sm font-medium text-slate-900 shadow-sm transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+            >
               Falar com consultor
-            </Button>
+            </a>
           </div>
 
           <dl className="grid gap-4 text-xs text-slate-600 sm:grid-cols-3 sm:text-sm">

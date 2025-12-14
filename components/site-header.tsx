@@ -36,9 +36,14 @@ export function SiteHeader() {
           <Button variant="ghost" size="sm" className="hidden md:inline-flex">
             Entrar
           </Button>
-          <Button size="sm" className="rounded-full">
+          <a
+            href="https://wa.me/5521994179187?text=Olá!%20Gostaria%20de%20orçar%20uma%20viagem."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 items-center justify-center rounded-full bg-brand px-4 text-sm font-medium text-white shadow transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+          >
             Orçar viagem
-          </Button>
+          </a>
         </div>
       </div>
     </header>

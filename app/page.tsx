@@ -5,6 +5,7 @@ import { Destinations } from "@/components/destinations";
 import { NiteroiTours } from "@/components/niteroi-tours";
 import { ContactSection } from "@/components/contact-section";
 import { SiteFooter } from "@/components/site-footer";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <ContactSection />
       </main>
       <SiteFooter />
+      <WhatsAppButton />
     </div>
   );
 }
